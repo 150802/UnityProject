@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
@@ -14,7 +15,8 @@ public class WeaponController : MonoBehaviour
     public Transform gunEnd;
     public Camera fpsCam;
     public GameObject explotionPrefab;
-
+    public Animator SpecialWeaponAnimator;
+    public Animator EffectController;
     private WaitForSeconds shotDuration = new WaitForSeconds(.07f);
     private LineRenderer gunEffect;
     private float nextFire;
@@ -26,10 +28,8 @@ public class WeaponController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown ("Fire1") && Time.time > nextFire)
+        if (Input.GetButtonDown ("Fire1"))
         {
-            nextFire = Time.time + fireRate;
-
             StartCoroutine(ShotEffect());
 
             Vector3 rayOrigin = fpsCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));
@@ -45,8 +45,6 @@ public class WeaponController : MonoBehaviour
                     hit.rigidbody.AddForce(hit.normal * hitForce);
                 }
 
-                
-
                 if (hit.collider.GetComponent<HealthScript>() != null) {
                     hit.collider.GetComponent<HealthScript>().hit = true;
                 }
@@ -57,12 +55,14 @@ public class WeaponController : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown("1") && Time.time > nextFire)
+        if (Input.GetKeyDown("1"))
+        if (Input.GetKeyDown("1"))
         {
+            StartCoroutine(WeaponAnimationController());
+
+            /*
             Vector3 rayOrigin = fpsCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));
             RaycastHit hit;
-
-            nextFire = Time.time + fireRate;
 
             if (Physics.Raycast(rayOrigin, fpsCam.transform.forward, out hit, weaponRange))
             {
@@ -73,6 +73,7 @@ public class WeaponController : MonoBehaviour
             {
                 gunEffect.SetPosition(1, rayOrigin + (fpsCam.transform.forward * weaponRange));
             }
+            */
         }
     }
 
@@ -81,5 +82,14 @@ public class WeaponController : MonoBehaviour
         gunEffect.enabled = true;
         yield return shotDuration;
         gunEffect.enabled = false;
+    }
+
+    private IEnumerator WeaponAnimationController()
+    {
+        SpecialWeaponAnimator.SetInteger("SlashCount", 1);
+        EffectController.SetInteger("SlashEffect", 1);
+        yield return new WaitForSeconds(1);
+        SpecialWeaponAnimator.SetInteger("SlashCount", 0);
+        EffectController.SetInteger("SlashEffect", 0);
     }
 }
