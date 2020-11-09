@@ -16,7 +16,7 @@ public class WeaponController : MonoBehaviour
     public Camera fpsCam;
     public GameObject explotionPrefab;
     public Animator SpecialWeaponAnimator;
-    public Animator EffectController;
+    public Animator characterAnimator;
     private WaitForSeconds shotDuration = new WaitForSeconds(.07f);
     private LineRenderer gunEffect;
     private float nextFire;
@@ -56,7 +56,6 @@ public class WeaponController : MonoBehaviour
         }
 
         if (Input.GetKeyDown("1"))
-        if (Input.GetKeyDown("1"))
         {
             StartCoroutine(WeaponAnimationController());
 
@@ -86,10 +85,10 @@ public class WeaponController : MonoBehaviour
 
     private IEnumerator WeaponAnimationController()
     {
-        SpecialWeaponAnimator.SetInteger("SlashCount", 1);
-        EffectController.SetInteger("SlashEffect", 1);
-        yield return new WaitForSeconds(1);
-        SpecialWeaponAnimator.SetInteger("SlashCount", 0);
-        EffectController.SetInteger("SlashEffect", 0);
+        SpecialWeaponAnimator.SetBool("Attack", true);
+        characterAnimator.SetBool("isAttacking", true);
+        yield return new WaitForSeconds(0);
+        SpecialWeaponAnimator.SetBool("Attack", false);
+        characterAnimator.SetBool("isAttacking", false);
     }
 }

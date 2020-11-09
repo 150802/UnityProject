@@ -20,6 +20,7 @@ public class TPController : MonoBehaviour
     //All the variables for player movement
     public CharacterController controller;
     public Animator animator;
+    public Animator playerAnimator;
     public float speed = 5f;
     public float turnSmoothTime = 200f;
     public float gravity = 9.8f;
@@ -76,7 +77,7 @@ public class TPController : MonoBehaviour
                     controller.height = 1f;
                     controller.radius = 1f;
                     animator.SetBool("isWalking", false);
-                    maxCamDistance = 5f;
+                    maxCamDistance = 7f;
                     cameraSideOffset = 2.5f;
                 }
                 else
@@ -86,7 +87,7 @@ public class TPController : MonoBehaviour
                     goliath.transform.SetParent(transform, false);
                     goliath.transform.localPosition = new Vector3(0f, 1.54f, 0f);
                     goliath.transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
-                    maxCamDistance = 10f;
+                    maxCamDistance = 12f;
                     cameraSideOffset = 5f;
                 }
             }
@@ -103,9 +104,19 @@ public class TPController : MonoBehaviour
                     animator.SetBool("isWalking", false);
                 }
                 bottomGoliath.localRotation = Quaternion.Euler(0, angle, 0);
+            } else {
+                if (isGrounded == true)
+                {
+                    playerAnimator.SetBool("isWalking", true);
+                }
+                else
+                {
+                    playerAnimator.SetBool("isWalking", false);
+                }
             }
         } else {
             animator.SetBool("isWalking", false);
+            playerAnimator.SetBool("isWalking", false);
         }
 
         //Handles jumping
