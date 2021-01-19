@@ -1,0 +1,132 @@
+{
+  "Nodes": [
+    {
+      "Annotation": "all_tundra_nodes",
+      "Action": "",
+      "Inputs": [],
+      "Outputs": [],
+      "TargetDirectories": [],
+      "PassIndex": 0,
+      "Deps": [
+        1
+      ],
+      "OverwriteOutputs": true,
+      "FrontendResponseFiles": [],
+      "AllowUnexpectedOutput": true,
+      "AllowedOutputSubstrings": [],
+      "DebugActionIndex": 0
+    },
+    {
+      "Annotation": "Il2Cpp /home/matei/Projects/UnityProject/UnityGame/Library/Il2cppBuildCache/StandaloneLinux64/Native/GameAssembly.so",
+      "Action": "\"/home/matei/Unity/Hub/Editor/2020.2.1f1/Editor/Data/il2cpp/build/deploy/netcoreapp3.1/il2cpp\" --convert-to-cpp --emit-null-checks --enable-array-bounds-check --dotnetprofile=\"unityaot\" --compile-cpp --libil2cpp-static --platform=\"Linux\" --architecture=\"x64\" --configuration=\"Release\" --outputpath=\"/home/matei/Projects/UnityProject/UnityGame/Library/Il2cppBuildCache/StandaloneLinux64/Native/GameAssembly.so\" --cachedirectory=\"/home/matei/Projects/UnityProject/UnityGame/Assets/../Library/il2cpp_cache\" --baselib-directory=\"/home/matei/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/Variations/linux64_withgfx_nondevelopment_il2cpp\" --avoid-dynamic-library-copy --profiler-report --map-file-parser=\"/home/matei/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Tools/MapFileParser/MapFileParser\" --directory=\"/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed\" --generatedcppdir=\"/home/matei/Projects/UnityProject/UnityGame/Library/Il2cppBuildCache/StandaloneLinux64/il2cppOutput\"",
+      "Inputs": [
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/Assembly-CSharp.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/Mono.Security.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/System.Configuration.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/System.Core.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/System.Xml.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/System.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/Unity.Mathematics.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/Unity.RenderPipelines.Core.Runtime.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.AIModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.AndroidJNIModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.AnimationModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.AssetBundleModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.AudioModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.CoreModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.DirectorModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.GridModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.IMGUIModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.InputLegacyModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.InputModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.ParticleSystemModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.Physics2DModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.PhysicsModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.SpriteShapeModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.SubsystemsModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.TerrainModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.TextRenderingModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.TilemapModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.UI.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.UIElementsNativeModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.UIModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.UnityAnalyticsModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.UnityWebRequestModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.VFXModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.VRModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.VideoModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.XRModule.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/UnityEngine.dll",
+        "/home/matei/Projects/UnityProject/UnityGame/Temp/StagingArea/Data/Managed/mscorlib.dll"
+      ],
+      "Outputs": [
+        "/home/matei/Projects/UnityProject/UnityGame/Library/Il2cppBuildCache/StandaloneLinux64/Native/GameAssembly.so"
+      ],
+      "TargetDirectories": [
+        "/home/matei/Projects/UnityProject/UnityGame/Library/Il2cppBuildCache/StandaloneLinux64/il2cppOutput"
+      ],
+      "PassIndex": 0,
+      "Deps": [],
+      "OverwriteOutputs": false,
+      "FrontendResponseFiles": [],
+      "AllowUnexpectedOutput": true,
+      "AllowedOutputSubstrings": [],
+      "DebugActionIndex": 1
+    }
+  ],
+  "FileSignatures": [
+    {
+      "File": "../../../../../../Library"
+    },
+    {
+      "File": "../../../Temp/StagingArea/Data/Managed"
+    },
+    {
+      "File": "artifacts/buildprogram/tundra_buildprogram.dag.json"
+    },
+    {
+      "File": "il2cpp_settings.json"
+    },
+    {
+      "File": "unitylinker_settings.json"
+    }
+  ],
+  "GlobSignatures": [
+    {
+      "Path": "../../../Temp/StagingArea/Data/Managed"
+    }
+  ],
+  "ContentDigestExtensions": [
+    ".rsp",
+    ".dll",
+    ".exe",
+    ".txt",
+    ".c",
+    ".cpp",
+    ".h",
+    ".cs",
+    ".hpp"
+  ],
+  "StructuredLogFileName": "artifacts/tundra.log.json",
+  "StateFileName": "artifacts/TundraBuildState.state",
+  "StateFileNameTmp": "artifacts/TundraBuildState.state.tmp",
+  "ScanCacheFileName": "artifacts/tundra.scancache",
+  "ScanCacheFileNameTmp": "artifacts/tundra.scancache.tmp",
+  "DigestCacheFileName": "artifacts/tundra.digestcache",
+  "DigestCacheFileNameTmp": "artifacts/tundra.digestcache.tmp",
+        "NamedNodes": {
+          "all_tundra_nodes": 0
+        }
+,  "DefaultNodes": [
+    0
+  ],
+  "SharedResources": [],
+  "Scanners": [],
+  "Identifier": "artifacts/tundra.dag.json",
+  "BuildTitle": "Bee",
+  "RelativePathToRoot": ".."
+}
