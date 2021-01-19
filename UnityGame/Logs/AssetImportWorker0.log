@@ -794,3 +794,27 @@ System memory in use after: 59,3 MB.
 Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 2990.
 Total: 2,665045 ms (FindLiveObjects: 0,434410 ms CreateObjectMapping: 0,155774 ms MarkObjects: 2,050437 ms  DeleteObjects: 0,022962 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 2028,362283 seconds.
+  path: Assets/platform.fbx
+  artifactKey: Guid(1ac0aecdde3a85a3e9fab2566be79286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/platform.fbx using Guid(1ac0aecdde3a85a3e9fab2566be79286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a437f09a84cc6cc492d5ea4a5ebe5c1') in 0,208784 seconds
+  Import took 0,212050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1,028022 seconds.
+  path: Assets/TPScript.cs
+  artifactKey: Guid(46ac974c66191c8eaa37bc428edc1153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TPScript.cs using Guid(46ac974c66191c8eaa37bc428edc1153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8350cc7c88a4d40450e41e1de97d8923') in 0,000508 seconds
+  Import took 0,003506 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0,001750 seconds.
+  path: Assets/TPScript.cs
+  artifactKey: Guid(46ac974c66191c8eaa37bc428edc1153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TPScript.cs using Guid(46ac974c66191c8eaa37bc428edc1153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8350cc7c88a4d40450e41e1de97d8923') in 0,000474 seconds
+  Import took 0,003145 seconds .
+
